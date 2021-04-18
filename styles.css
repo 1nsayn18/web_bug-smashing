@@ -159,6 +159,9 @@ body {
   color: var(--primaryColor);
   text-align: center;
 }
+.product-img:hover {
+  opacity: 0.4;
+}
 
 .cart-overlay {
   position: fixed;
