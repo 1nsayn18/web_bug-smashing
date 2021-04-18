@@ -73,11 +73,11 @@ class UI{
               //save cart in local storage
               Storage.saveCart(cart );
               //set cart values
-               setCartValues(cart);
+               this.setCartValues(cart);
               //display cart item
-               addCardItem(cartItem);
+               this.addCardItem(cartItem);
               //show the cart
-               showCart();
+               this.showCart();
 
            });
         
