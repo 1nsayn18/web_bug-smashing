@@ -62,7 +62,11 @@ class UI{
       buttonsDOM = buttons;
       buttons.forEach(button => {
         let id =button.dataset.id;
-    
+        let inCart = cart.find(item =>item.id === id);
+        if (inCart){
+            button.innerText= "In cart";
+            button.disabled = true;
+        }
            button.addEventListener('click',(event)=>{
               event.target.innerText = "In cart";
               event.target.disabled = true;
